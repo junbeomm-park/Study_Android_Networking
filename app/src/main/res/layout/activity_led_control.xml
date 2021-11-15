@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".arduino.LedControlActivity">
+
+    <Button
+        android:id="@+id/led_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="led켜기"
+        android:onClick="send_msg"/>
+    <Button
+        android:id="@+id/led_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="led끄기"
+        android:onClick="send_msg"/>
+
+</LinearLayout>
