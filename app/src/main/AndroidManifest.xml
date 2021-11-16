@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Network"
         android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".ArduinoControlExam.MultiLedControlActivity">
+        <activity android:name=".arduino.LedControlActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
