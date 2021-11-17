@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Network"
         android:usesCleartextTraffic="true">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".arduino.LedControlActivity">
             <intent-filter>
